@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Split: Left Day (College) to Right Night (Navratri) -->
+    <linearGradient id="splitDayNight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1eb" />
+      <stop offset="40%" stop-color="#fed6e3" />
+      <stop offset="60%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Warm Golden Hour (Left - Viva) -->
+    <linearGradient id="vivaDaySky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#ffedd5" />
+    </linearGradient>
+
+    <!-- Festive Starry Night (Right - Navratri) -->
+    <linearGradient id="navratriNightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+
+    <!-- Glowing Lantern Radial Field -->
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="1" />
+      <stop offset="40%" stop-color="#fb923c" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#be123c" stop-opacity="0.0" />
+    </radialGradient>
+
+    <!-- Traditional Clothes Gradients -->
+    <linearGradient id="chaniyaCholi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="50%" stop-color="#db2777" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <linearGradient id="kurtaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <!-- Soft Filter -->
+    <filter id="softGhibliGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="cozyShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="#4c0519" flood-opacity="0.2" />
+    </filter>
+
+    <!-- Sparkle Symbol -->
+    <g id="ghibliSparkle">
+      <path d="M0,-12 Q0,0 12,0 Q0,0 0,12 Q0,0 -12,0 Q0,0 0,-12 Z" fill="#ffd166" />
+      <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    </g>
+
+    <g id="heartGlow">
+      <path d="M0,4 A4,4 0 0,0 8,-1 A4,4 0 0,0 0,-7 A4,4 0 0,0 -8,-1 A4,4 0 0,0 0,4 Z" fill="#f43f5e" opacity="0.9" />
+    </g>
+
+    <!-- Dandiya Stick Symbol -->
+    <g id="dandiyaStick">
+      <rect x="-4" y="-45" width="8" height="90" rx="4" fill="#fbbf24" stroke="#b45309" stroke-width="1.5" />
+      <rect x="-4" y="-35" width="8" height="8" fill="#e11d48" />
+      <rect x="-4" y="-15" width="8" height="8" fill="#38bdf8" />
+      <rect x="-4" y="5" width="8" height="8" fill="#ec4899" />
+      <rect x="-4" y="25" width="8" height="8" fill="#10b981" />
+      <circle cx="0" cy="45" r="4" fill="#f59e0b" />
+    </g>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. SPLIT BACKGROUND: VIVA DAY & NAVRATRI   -->
+  <!-- ========================================== -->
+  <!-- Left Half: Sunny College Viva Campus -->
+  <rect x="0" y="0" width="600" height="675" fill="url(#vivaDaySky)" />
+  <!-- College Campus Grass & Pavement -->
+  <polygon points="0,500 600,450 600,675 0,675" fill="#86efac" stroke="#16a34a" stroke-width="2" />
+  <polygon points="0,540 600,490 600,675 0,675" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" />
+  
+  <!-- College Building in Background (Left) -->
+  <polygon points="40,220 280,220 280,470 40,470" fill="#fdf2f8" stroke="#f43f5e" stroke-width="3" opacity="0.85" />
+  <!-- Windows on College Building -->
+  <rect x="70" y="250" width="40" height="50" rx="4" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5" />
+  <rect x="130" y="250" width="40" height="50" rx="4" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5" />
+  <rect x="190" y="250" width="40" height="50" rx="4" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5" />
+  <rect x="70" y="320" width="40" height="50" rx="4" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5" />
+  <rect x="130" y="320" width="40" height="50" rx="4" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5" />
+  <rect x="190" y="320" width="40" height="50" rx="4" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5" />
+  <!-- Viva Signboard -->
+  <rect x="90" y="170" width="140" height="40" rx="8" fill="#be123c" stroke="#fff" stroke-width="2" />
+  <text x="160" y="195" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    🏛️ COLLEGE VIVA DAY
+  </text>
+
+  <!-- Right Half: Starry Festive Navratri Night -->
+  <rect x="600" y="0" width="600" height="675" fill="url(#navratriNightSky)" />
+  <!-- Garba Ground Festive Stage -->
+  <polygon points="600,450 1200,500 1200,675 600,675" fill="#3b0764" stroke="#a855f7" stroke-width="2" />
+  <polygon points="600,490 1200,540 1200,675 600,675" fill="#581c87" stroke="#e879f9" stroke-width="2" />
+
+  <!-- Navratri Festive Fairy Lights & Marigold Toran Garland -->
+  <path d="M600,80 Q900,160 1200,80" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="6 3" />
+  <!-- Marigold Flower Balls -->
+  <circle cx="640" cy="95" r="9" fill="#f59e0b" stroke="#d97706" stroke-width="1.5" />
+  <circle cx="710" cy="115" r="9" fill="#e11d48" stroke="#9f1239" stroke-width="1.5" />
+  <circle cx="780" cy="130" r="9" fill="#f59e0b" stroke="#d97706" stroke-width="1.5" />
+  <circle cx="850" cy="138" r="9" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+  <circle cx="920" cy="136" r="9" fill="#e11d48" stroke="#9f1239" stroke-width="1.5" />
+  <circle cx="990" cy="125" r="9" fill="#f59e0b" stroke="#d97706" stroke-width="1.5" />
+  <circle cx="1060" cy="108" r="9" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+  <circle cx="1130" cy="90" r="9" fill="#e11d48" stroke="#9f1239" stroke-width="1.5" />
+
+  <!-- Glowing Hanging Lanterns (Diya Lights) -->
+  <circle cx="850" cy="180" r="50" fill="url(#lanternGlow)" />
+  <polygon points="835,160 865,160 858,190 842,190" fill="#f59e0b" stroke="#b45309" stroke-width="1.5" />
+  <circle cx="850" cy="175" r="5" fill="#fff" filter="url(#softGhibliGlow)" />
+
+  <circle cx="1100" cy="150" r="45" fill="url(#lanternGlow)" />
+  <polygon points="1085,135 1115,135 1108,165 1092,165" fill="#f59e0b" stroke="#b45309" stroke-width="1.5" />
+  <circle cx="1100" cy="150" r="5" fill="#fff" filter="url(#softGhibliGlow)" />
+
+  <!-- Starry Night Sparkles on Right -->
+  <use href="#ghibliSparkle" x="680" y="160" transform="scale(1.3)" filter="url(#softGhibliGlow)" />
+  <use href="#ghibliSparkle" x="980" y="240" transform="scale(1.5)" filter="url(#softGhibliGlow)" />
+  <use href="#ghibliSparkle" x="1140" y="200" transform="scale(1.1)" />
+  <use href="#ghibliSparkle" x="760" y="270" transform="scale(1.2)" />
+
+  <!-- Center Transition Wave Ribbon (Connecting Both Memories) -->
+  <path d="M600,0 Q580,300 620,675" fill="none" stroke="#f43f5e" stroke-width="4" stroke-dasharray="10 5" filter="url(#softGhibliGlow)" />
+  <!-- Center Heart Emblem -->
+  <circle cx="600" cy="337" r="28" fill="#ffffff" stroke="#f43f5e" stroke-width="3" filter="url(#cozyShadow)" />
+  <use href="#heartGlow" x="600" y="340" transform="scale(1.8)" />
+
+  <!-- ========================================== -->
+  <!-- 2. LEFT SCENE: COLLEGE VIVA DAY COUPLE     -->
+  <!-- ========================================== -->
+  <g transform="translate(180, 200)" filter="url(#cozyShadow)">
+    
+    <!-- Speech / Thought Bubble: "Viva Cleared! 🎓✨" -->
+    <rect x="50" y="-35" width="160" height="34" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+    <text x="130" y="-13" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">
+      "Viva Cleared Together! 📚✨"
+    </text>
+
+    <!-- BOY (Left side of Viva scene - Standing proudly) -->
+    <!-- Torso (College Formal Shirt) -->
+    <path d="M40,360 L55,200 Q90,175 130,185 L155,200 L170,360 Z" fill="#3b82f6" stroke="#1d4ed8" stroke-width="3" />
+    <polygon points="85,185 105,250 125,185" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5" />
+    <!-- Boy Head -->
+    <ellipse cx="105" cy="130" rx="34" ry="40" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" />
+    <path d="M70,130 Q65,85 95,70 Q130,60 150,85 Q160,110 150,140 Q140,105 115,110 Q90,115 80,140 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2.5" />
+    <!-- Smiling Eyes & Victory Smile -->
+    <path d="M88,130 Q96,122 104,130" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+    <path d="M116,130 Q124,122 132,130" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+    <path d="M98,145 Q110,158 122,145" fill="none" stroke="#be123c" stroke-width="2.5" stroke-linecap="round" />
+    <ellipse cx="88" cy="140" rx="7" ry="3" fill="#fda4af" opacity="0.8" />
+    <ellipse cx="132" cy="140" rx="7" ry="3" fill="#fda4af" opacity="0.8" />
+
+    <!-- Boy Arm Holding Viva File / Notebook -->
+    <path d="M50,210 Q40,260 65,290 L90,270 Q75,245 70,210 Z" fill="#60a5fa" stroke="#1d4ed8" stroke-width="2.5" />
+    <rect x="40" y="270" width="45" height="60" rx="4" fill="#0284c7" stroke="#0369a1" stroke-width="2" transform="rotate(-15, 60, 300)" />
+    <text x="62" y="305" font-family="'Segoe UI', sans-serif" font-size="7" font-weight="bold" fill="#ffffff" text-anchor="middle" transform="rotate(-15, 60, 300)">
+      VIVA FILE
+    </text>
+
+    <!-- GIRL (Right side of Viva scene - Standing closely with Peace Sign ✌️) -->
+    <g transform="translate(95, 10)">
+      <!-- Girl Torso (Cute College Kurti / Top) -->
+      <path d="M50,350 L65,190 Q105,165 145,190 L165,350 Z" fill="#f43f5e" stroke="#be123c" stroke-width="3" />
+      <path d="M90,190 Q105,215 120,190" fill="#fff" stroke="#be123c" stroke-width="1.5" />
+
+      <!-- Girl Head & Long Hair -->
+      <path d="M60,120 Q45,200 55,290 Q105,310 155,290 Q165,200 150,120 Z" fill="#451a03" stroke="#290e02" stroke-width="3" />
+      <ellipse cx="105" cy="115" rx="32" ry="38" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" />
+      <path d="M75,115 Q70,70 105,62 Q140,70 135,115 Q125,88 105,92 Q85,88 75,115 Z" fill="#451a03" stroke="#290e02" stroke-width="2.5" />
+
+      <!-- Big Radiant Smiling Eyes & Cute Smile -->
+      <ellipse cx="92" cy="112" rx="5" ry="8" fill="#1e293b" />
+      <circle cx="90" cy="108" r="2.5" fill="#fff" />
+      <ellipse cx="118" cy="112" rx="5" ry="8" fill="#1e293b" />
+      <circle cx="116" cy="108" r="2.5" fill="#fff" />
+      <path d="M95,128 Q105,140 115,128" fill="#be123c" stroke="#9f1239" stroke-width="2" />
+      <ellipse cx="82" cy="122" rx="7" ry="4" fill="#fda4af" opacity="0.9" />
+      <ellipse cx="128" cy="122" rx="7" ry="4" fill="#fda4af" opacity="0.9" />
+
+      <!-- Girl Hand Making Peace Sign ✌️ -->
+      <path d="M145,205 Q175,235 185,180" fill="none" stroke="#f43f5e" stroke-width="16" stroke-linecap="round" />
+      <path d="M145,205 Q175,235 185,180" fill="none" stroke="#fed7aa" stroke-width="11" stroke-linecap="round" />
+      <circle cx="185" cy="175" r="10" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5" />
+      <!-- Peace Fingers -->
+      <line x1="182" y1="175" x2="178" y2="155" stroke="#fed7aa" stroke-width="5" stroke-linecap="round" />
+      <line x1="188" y1="175" x2="194" y2="155" stroke="#fed7aa" stroke-width="5" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. RIGHT SCENE: NAVRATRI GARBA CELEBRATION -->
+  <!-- ========================================== -->
+  <g transform="translate(740, 180)" filter="url(#cozyShadow)">
+    
+    <!-- Speech / Festive Banner: "1st Navratri at Your Place 🌺💃" -->
+    <rect x="40" y="-35" width="220" height="34" rx="10" fill="#ffffff" stroke="#f43f5e" stroke-width="2" />
+    <text x="150" y="-13" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#be123c" text-anchor="middle">
+      "1st Navratri at Your Place 🌺💃"
+    </text>
+
+    <!-- BOY (Left side of Garba - Traditional Kurta with Dandiya Stick) -->
+    <!-- Boy Torso (Yellow / Golden Festive Kurta) -->
+    <path d="M40,380 L55,220 Q90,195 130,205 L155,220 L170,380 Z" fill="url(#kurtaGrad)" stroke="#b45309" stroke-width="3" />
+    <path d="M85,205 L105,270 L125,205" fill="#fef3c7" stroke="#b45309" stroke-width="1.5" />
+    <!-- Kurta Mirror Work / Embroidery dots -->
+    <circle cx="105" cy="235" r="3" fill="#ffffff" stroke="#b45309" stroke-width="1" />
+    <circle cx="105" cy="255" r="3" fill="#ffffff" stroke="#b45309" stroke-width="1" />
+    
+    <!-- Boy Head -->
+    <ellipse cx="105" cy="150" rx="34" ry="40" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" />
+    <path d="M70,150 Q65,105 95,90 Q130,80 150,105 Q160,130 150,160 Q140,125 115,130 Q90,135 80,160 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2.5" />
+    
+    <!-- Joyful Dancing Eyes & Big Smile -->
+    <path d="M88,150 Q96,142 104,150" fill="none" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M116,150 Q124,142 132,150" fill="none" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M98,168 Q110,182 122,168" fill="none" stroke="#be123c" stroke-width="3" stroke-linecap="round" />
+    <ellipse cx="88" cy="162" rx="7" ry="4" fill="#fda4af" opacity="0.9" />
+    <ellipse cx="132" cy="162" rx="7" ry="4" fill="#fda4af" opacity="0.9" />
+
+    <!-- Boy Arm Holding Dandiya Stick (Playing Garba) -->
+    <path d="M150,225 Q185,240 190,190" fill="none" stroke="#f59e0b" stroke-width="18" stroke-linecap="round" />
+    <path d="M150,225 Q185,240 190,190" fill="none" stroke="#fed7aa" stroke-width="12" stroke-linecap="round" />
+    <circle cx="190" cy="185" r="9" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5" />
+    <!-- Dandiya Stick 1 (Boy) -->
+    <use href="#dandiyaStick" x="190" y="175" transform="rotate(35, 190, 175)" />
+
+    <!-- GIRL (Right side of Garba - Traditional Chaniya Choli with Dandiya Stick) -->
+    <g transform="translate(130, 20)">
+      <!-- Girl Traditional Navratri Chaniya Choli Dress -->
+      <path d="M50,360 L70,200 Q110,175 150,200 L170,360 Z" fill="url(#chaniyaCholi)" stroke="#881337" stroke-width="3" />
+      <!-- Dupatta & Traditional Embroidery -->
+      <path d="M60,200 Q110,260 160,220 L165,360 L140,360 Q95,280 55,220 Z" fill="#fbbf24" stroke="#d97706" stroke-width="2" opacity="0.9" />
+
+      <!-- Girl Head & Traditional Jhumkas & Bindi -->
+      <path d="M60,130 Q45,210 55,300 Q105,320 155,300 Q165,210 150,130 Z" fill="#451a03" stroke="#290e02" stroke-width="3" />
+      <ellipse cx="105" cy="125" rx="32" ry="38" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" />
+      <path d="M75,125 Q70,80 105,72 Q140,80 135,125 Q125,98 105,102 Q85,98 75,125 Z" fill="#451a03" stroke="#290e02" stroke-width="2.5" />
+
+      <!-- Navratri Bindi & Jhumkas -->
+      <circle cx="105" cy="112" r="2.5" fill="#be123c" />
+      <!-- Jhumkas -->
+      <circle cx="70" cy="142" r="4" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+      <circle cx="140" cy="142" r="4" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+
+      <!-- Radiant Smiling Eyes & Beautiful Smile -->
+      <ellipse cx="92" cy="122" rx="5.5" ry="8.5" fill="#1e293b" />
+      <circle cx="90" cy="118" r="2.5" fill="#fff" />
+      <ellipse cx="118" cy="122" rx="5.5" ry="8.5" fill="#1e293b" />
+      <circle cx="116" cy="118" r="2.5" fill="#fff" />
+      <path d="M95,138 Q105,152 115,138" fill="#be123c" stroke="#9f1239" stroke-width="2" />
+      <ellipse cx="82" cy="132" rx="7" ry="4" fill="#fda4af" opacity="0.95" />
+      <ellipse cx="128" cy="132" rx="7" ry="4" fill="#fda4af" opacity="0.95" />
+
+      <!-- Girl Arm Holding Dandiya Stick (Meeting Boy's Dandiya 🪔✨) -->
+      <path d="M60,215 Q25,230 20,180" fill="none" stroke="#f43f5e" stroke-width="18" stroke-linecap="round" />
+      <path d="M60,215 Q25,230 20,180" fill="none" stroke="#fed7aa" stroke-width="12" stroke-linecap="round" />
+      <circle cx="20" cy="175" r="9" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5" />
+      <!-- Dandiya Stick 2 (Girl) Clashing with Boy's Dandiya -->
+      <use href="#dandiyaStick" x="20" y="165" transform="rotate(-35, 20, 165)" />
+      
+      <!-- Dandiya Clash Sparkle Burst 💥✨ -->
+      <use href="#ghibliSparkle" x="-10" y="150" transform="scale(1.6)" filter="url(#softGhibliGlow)" />
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. TOP TITLE BANNER                        -->
+  <!-- ========================================== -->
+  <rect x="220" y="20" width="760" height="46" rx="14" fill="#ffffff" opacity="0.95" stroke="#f43f5e" stroke-width="2.5" filter="url(#cozyShadow)" />
+  <text x="600" y="49" font-family="'Georgia', 'Playfair Display', serif" font-size="15" font-weight="bold" fill="#be123c" text-anchor="middle" letter-spacing="1">
+    🌺 FIRST NAVRATRI &amp; COLLEGE VIVA TOGETHER IN LOVE 📚
+  </text>
+</svg>

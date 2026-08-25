@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Sunlight Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1eb" />
+      <stop offset="35%" stop-color="#fed6e3" />
+      <stop offset="70%" stop-color="#ffccd5" />
+      <stop offset="100%" stop-color="#ffb3c1" />
+    </linearGradient>
+
+    <!-- Warm Golden Hour Sunbeam Gradient -->
+    <linearGradient id="sunBeam1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#ffd166" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ff9a9e" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="sunBeam2" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#ffe6aa" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ff758c" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Wall Gradient -->
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbfb" />
+      <stop offset="100%" stop-color="#ebedee" />
+    </linearGradient>
+
+    <!-- Wooden Desk Gradients -->
+    <linearGradient id="woodDeskTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e0a96d" />
+      <stop offset="50%" stop-color="#ecb37a" />
+      <stop offset="100%" stop-color="#d69759" />
+    </linearGradient>
+
+    <linearGradient id="woodDeskFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bc7c41" />
+      <stop offset="100%" stop-color="#9a5f27" />
+    </linearGradient>
+
+    <linearGradient id="woodFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8b98a" />
+      <stop offset="100%" stop-color="#c68b59" />
+    </linearGradient>
+
+    <!-- Blackboard / Screen Gradient -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3748" />
+      <stop offset="50%" stop-color="#1a202c" />
+      <stop offset="100%" stop-color="#171923" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="bokehBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14" result="blur" />
+    </filter>
+
+    <!-- Sparkle Symbol -->
+    <g id="sparkleStar">
+      <path d="M0,-12 Q0,0 12,0 Q0,0 0,12 Q0,0 -12,0 Q0,0 0,-12 Z" fill="#fff" opacity="0.9" />
+      <circle cx="0" cy="0" r="3" fill="#ffe066" />
+    </g>
+
+    <g id="heartParticle">
+      <path d="M0,3 A3,3 0 0,0 6,-1 A3,3 0 0,0 0,-5 A3,3 0 0,0 -6,-1 A3,3 0 0,0 0,3 Z" fill="#ff4d6d" opacity="0.75" />
+    </g>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. BACKGROUND ROOM & WALLS                 -->
+  <!-- ========================================== -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+
+  <!-- Back Auditorium Wall -->
+  <polygon points="0,0 1200,0 1200,420 0,420" fill="url(#wallGrad)" opacity="0.85" />
+  
+  <!-- Back Wall Accent Boarding -->
+  <line x1="0" y1="120" x2="1200" y2="120" stroke="#cbd5e1" stroke-width="2" />
+  <line x1="0" y1="260" x2="1200" y2="260" stroke="#cbd5e1" stroke-width="2" />
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#94a3b8" stroke-width="3" />
+
+  <!-- ========================================== -->
+  <!-- 2. LARGE AUDITORIUM WINDOWS (LEFT & TOP)   -->
+  <!-- ========================================== -->
+  <!-- Window 1 (Far Left) -->
+  <rect x="40" y="50" width="130" height="240" rx="8" fill="#ffffff" opacity="0.9" />
+  <rect x="45" y="55" width="55" height="110" rx="4" fill="#e0f2fe" opacity="0.8" />
+  <rect x="110" y="55" width="55" height="110" rx="4" fill="#e0f2fe" opacity="0.8" />
+  <rect x="45" y="170" width="55" height="110" rx="4" fill="#fed7aa" opacity="0.85" />
+  <rect x="110" y="170" width="55" height="110" rx="4" fill="#fed7aa" opacity="0.85" />
+
+  <!-- Window 2 (Middle Left) -->
+  <rect x="190" y="50" width="130" height="240" rx="8" fill="#ffffff" opacity="0.9" />
+  <rect x="195" y="55" width="55" height="110" rx="4" fill="#e0f2fe" opacity="0.8" />
+  <rect x="260" y="55" width="55" height="110" rx="4" fill="#e0f2fe" opacity="0.8" />
+  <rect x="195" y="170" width="55" height="110" rx="4" fill="#fed7aa" opacity="0.85" />
+  <rect x="260" y="170" width="55" height="110" rx="4" fill="#fed7aa" opacity="0.85" />
+
+  <!-- ========================================== -->
+  <!-- 3. CENTER SEMINAR STAGE & MAIN SCREEN      -->
+  <!-- ========================================== -->
+  <!-- Projector Screen / Blackboard Frame -->
+  <rect x="420" y="55" width="560" height="230" rx="14" fill="#475569" stroke="#334155" stroke-width="6" filter="url(#softGlow)" />
+  <rect x="430" y="65" width="540" height="210" rx="10" fill="url(#boardGrad)" />
+
+  <!-- Screen Header Banner inside Blackboard -->
+  <rect x="460" y="85" width="480" height="40" rx="8" fill="#be123c" opacity="0.85" />
+  <text x="700" y="111" font-family="'Georgia', 'Playfair Display', serif" font-size="19" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">
+    🏛️ COLLEGE SEMINAR HALL 3 • JULY 30, 2025
+  </text>
+
+  <!-- Romantic Spark Banner on Screen -->
+  <text x="700" y="165" font-family="'Brush Script MT', 'Dancing Script', cursive, sans-serif" font-size="34" font-weight="bold" fill="#fbcfe8" text-anchor="middle">
+    "Where Destiny Brought My Eyes To Yours" ✨
+  </text>
+  
+  <text x="700" y="205" font-family="'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#fde047" text-anchor="middle" letter-spacing="0.5">
+    Day 1 of Our 1-Year Journey Together • From A Glance to Forever ❤️
+  </text>
+
+  <!-- Speaker Podium on Stage -->
+  <polygon points="400,260 450,260 445,360 395,360" fill="#78350f" stroke="#451a03" stroke-width="2" />
+  <polygon points="385,250 465,250 450,260 400,260" fill="#92400e" />
+  <!-- Microphone -->
+  <path d="M430,250 Q435,230 445,225" stroke="#94a3b8" stroke-width="3" fill="none" />
+  <circle cx="445" cy="225" r="4" fill="#475569" />
+
+  <!-- Clock on Wall -->
+  <circle cx="1040" cy="90" r="30" fill="#ffffff" stroke="#cbd5e1" stroke-width="4" />
+  <circle cx="1040" cy="90" r="26" fill="#f8fafc" />
+  <line x1="1040" y1="90" x2="1040" y2="72" stroke="#e11d48" stroke-width="3" stroke-linecap="round" />
+  <line x1="1040" y1="90" x2="1054" y2="90" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+  <circle cx="1040" cy="90" r="3" fill="#0f172a" />
+
+  <!-- ========================================== -->
+  <!-- 4. WOODEN TIERED AUDITORIUM DESKS (3 ROWS) -->
+  <!-- ========================================== -->
+  <!-- Auditorium Floor -->
+  <polygon points="0,420 1200,420 1200,675 0,675" fill="url(#woodFloor)" />
+
+  <!-- ROW 1 (Far Tier - Back Desks) -->
+  <polygon points="120,360 1080,360 1110,385 90,385" fill="url(#woodDeskTop)" stroke="#9a5f27" stroke-width="2" />
+  <polygon points="90,385 1110,385 1110,425 90,425" fill="url(#woodDeskFront)" stroke="#78350f" stroke-width="2" />
+  
+  <!-- Row 1 Chairs -->
+  <rect x="220" y="325" width="60" height="35" rx="6" fill="#881337" opacity="0.9" />
+  <rect x="360" y="325" width="60" height="35" rx="6" fill="#881337" opacity="0.9" />
+  <rect x="500" y="325" width="60" height="35" rx="6" fill="#881337" opacity="0.9" />
+  <rect x="640" y="325" width="60" height="35" rx="6" fill="#881337" opacity="0.9" />
+  <rect x="780" y="325" width="60" height="35" rx="6" fill="#881337" opacity="0.9" />
+  <rect x="920" y="325" width="60" height="35" rx="6" fill="#881337" opacity="0.9" />
+
+  <!-- ROW 2 (Middle Tier Desks) -->
+  <polygon points="70,440 1130,440 1170,480 30,480" fill="url(#woodDeskTop)" stroke="#9a5f27" stroke-width="2" />
+  <polygon points="30,480 1170,480 1170,530 30,530" fill="url(#woodDeskFront)" stroke="#78350f" stroke-width="2" />
+
+  <!-- Row 2 Chairs -->
+  <rect x="180" y="395" width="75" height="45" rx="8" fill="#be123c" opacity="0.95" />
+  <rect x="340" y="395" width="75" height="45" rx="8" fill="#be123c" opacity="0.95" />
+  <rect x="500" y="395" width="75" height="45" rx="8" fill="#be123c" opacity="0.95" />
+  <rect x="660" y="395" width="75" height="45" rx="8" fill="#be123c" opacity="0.95" />
+  <rect x="820" y="395" width="75" height="45" rx="8" fill="#be123c" opacity="0.95" />
+  <rect x="980" y="395" width="75" height="45" rx="8" fill="#be123c" opacity="0.95" />
+
+  <!-- Notebooks & Pens on Middle Row Desks -->
+  <!-- Cute Notebook 1 -->
+  <rect x="360" y="448" width="45" height="25" rx="3" fill="#f43f5e" stroke="#fff" stroke-width="1" />
+  <rect x="375" y="448" width="28" height="25" fill="#ffe4e6" />
+  <line x1="410" y1="452" x2="425" y2="470" stroke="#0284c7" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Cute Coffee Mug & Notebook on Middle Desk (The Spark Seat) -->
+  <ellipse cx="680" cy="460" rx="10" ry="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+  <rect x="710" y="448" width="55" height="26" rx="3" fill="#38bdf8" stroke="#fff" stroke-width="1" />
+  <!-- Sparkling Heart over her seat -->
+  <use href="#sparkleStar" x="735" y="435" transform="scale(1.4)" filter="url(#softGlow)" />
+
+  <!-- ROW 3 (Foreground Tier Desks) -->
+  <polygon points="0,550 1200,550 1200,605 0,605" fill="url(#woodDeskTop)" stroke="#9a5f27" stroke-width="3" />
+  <polygon points="0,605 1200,605 1200,675 0,675" fill="url(#woodDeskFront)" stroke="#78350f" stroke-width="3" />
+
+  <!-- Foreground Books & Stationary -->
+  <rect x="200" y="562" width="70" height="34" rx="4" fill="#a855f7" stroke="#fff" stroke-width="1.5" />
+  <rect x="220" y="562" width="48" height="34" fill="#f3e8ff" />
+  
+  <rect x="880" y="562" width="65" height="34" rx="4" fill="#ec4899" stroke="#fff" stroke-width="1.5" />
+  <rect x="900" y="562" width="43" height="34" fill="#fdf2f8" />
+  <!-- College Notes Paper: "Me aeni pasethi notes mangela!" -->
+  <rect x="520" y="560" width="80" height="38" rx="3" fill="#fff" stroke="#f43f5e" stroke-width="1.5" transform="rotate(-3, 560, 575)" />
+  <text x="560" y="580" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold" fill="#e11d48" text-anchor="middle" transform="rotate(-3, 560, 575)">
+    COLLEGE NOTES 📝
+  </text>
+  <line x1="530" y1="586" x2="590" y2="583" stroke="#cbd5e1" stroke-width="1" transform="rotate(-3, 560, 575)" />
+
+  <!-- ========================================== -->
+  <!-- 5. CINEMATIC SUNBEAMS & ANIME LIGHTING     -->
+  <!-- ========================================== -->
+  <!-- Primary Golden Sunbeam Angle -->
+  <polygon points="0,0 280,0 850,675 350,675" fill="url(#sunBeam1)" style="mix-blend-mode: screen;" />
+  <polygon points="150,0 450,0 1150,675 700,675" fill="url(#sunBeam2)" style="mix-blend-mode: screen;" />
+
+  <!-- Soft Romantic Bokeh Circles -->
+  <circle cx="280" cy="180" r="45" fill="#fef08a" opacity="0.35" filter="url(#bokehBlur)" />
+  <circle cx="520" cy="280" r="60" fill="#fbcfe8" opacity="0.4" filter="url(#bokehBlur)" />
+  <circle cx="750" cy="380" r="50" fill="#fde047" opacity="0.35" filter="url(#bokehBlur)" />
+  <circle cx="920" cy="220" r="40" fill="#fda4af" opacity="0.3" filter="url(#bokehBlur)" />
+  <circle cx="420" cy="480" r="55" fill="#fff" opacity="0.4" filter="url(#bokehBlur)" />
+
+  <!-- Floating Glowing Anime Sparkles & Hearts -->
+  <use href="#sparkleStar" x="250" y="140" transform="scale(1.2)" />
+  <use href="#sparkleStar" x="480" y="210" transform="scale(0.9)" />
+  <use href="#sparkleStar" x="620" y="120" transform="scale(1.5)" filter="url(#softGlow)" />
+  <use href="#sparkleStar" x="780" y="260" transform="scale(1.1)" />
+  <use href="#sparkleStar" x="900" y="160" transform="scale(1.3)" filter="url(#softGlow)" />
+  <use href="#sparkleStar" x="380" y="340" transform="scale(0.8)" />
+  <use href="#sparkleStar" x="840" y="440" transform="scale(1.2)" />
+  <use href="#sparkleStar" x="650" y="490" transform="scale(1.0)" />
+
+  <use href="#heartParticle" x="320" y="240" transform="scale(1.5)" />
+  <use href="#heartParticle" x="590" y="190" transform="scale(1.2)" />
+  <use href="#heartParticle" x="760" y="320" transform="scale(1.8)" filter="url(#softGlow)" />
+  <use href="#heartParticle" x="870" y="280" transform="scale(1.3)" />
+
+  <!-- Romantic Ambient Vignette Border -->
+  <rect width="1200" height="675" fill="none" stroke="#f43f5e" stroke-width="8" opacity="0.25" rx="4" />
+</svg>

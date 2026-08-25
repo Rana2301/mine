@@ -1,0 +1,366 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Ghibli Warm Room Watercolor Gradient -->
+    <linearGradient id="ghibliWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="35%" stop-color="#fee2e2" />
+      <stop offset="70%" stop-color="#fdf2f8" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+
+    <!-- Warm Glowing Candlelight Radial Field -->
+    <radialGradient id="candleGlowRadial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="25%" stop-color="#fef08a" stop-opacity="0.9" />
+      <stop offset="55%" stop-color="#fb923c" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.0" />
+    </radialGradient>
+
+    <!-- Ghibli Boy's Shirt (Warm Forest Green / Cozy Japanese Anime Vibe) -->
+    <linearGradient id="boyShirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+
+    <!-- Ghibli Girl's Dress (Soft Strawberry Cream) -->
+    <linearGradient id="girlDress" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#be123c" />
+    </linearGradient>
+
+    <!-- Wooden Table Gradient -->
+    <linearGradient id="woodTableGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Cake Frosting Gradients -->
+    <linearGradient id="frostingCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#fff1f2" />
+      <stop offset="100%" stop-color="#fecdd3" />
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="ghibliGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="6" stdDeviation="6" flood-color="#881337" flood-opacity="0.18" />
+    </filter>
+
+    <!-- Sparkle Symbol -->
+    <g id="starGlow">
+      <path d="M0,-12 Q0,0 12,0 Q0,0 0,12 Q0,0 -12,0 Q0,0 0,-12 Z" fill="#ffd166" />
+      <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    </g>
+
+    <g id="heartGlow">
+      <path d="M0,4 A4,4 0 0,0 8,-1 A4,4 0 0,0 0,-7 A4,4 0 0,0 -8,-1 A4,4 0 0,0 0,4 Z" fill="#f43f5e" opacity="0.9" />
+    </g>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. BACKGROUND ROOM & FESTIVE PARTY DECOR   -->
+  <!-- ========================================== -->
+  <rect width="1200" height="675" fill="url(#ghibliWall)" />
+
+  <!-- Cozy Wooden Baseboard & Wall Lines -->
+  <line x1="0" y1="440" x2="1200" y2="440" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="8 4" />
+  
+  <!-- Ghibli Style Window in Background (Starry Night Outside) -->
+  <rect x="70" y="40" width="220" height="220" rx="14" fill="#0f172a" stroke="#cbd5e1" stroke-width="4" filter="url(#softShadow)" />
+  <!-- Window Glass Panes -->
+  <rect x="80" y="50" width="95" height="95" rx="6" fill="#1e1b4b" opacity="0.9" />
+  <rect x="185" y="50" width="95" height="95" rx="6" fill="#1e1b4b" opacity="0.9" />
+  <rect x="80" y="155" width="95" height="95" rx="6" fill="#1e1b4b" opacity="0.9" />
+  <rect x="185" y="155" width="95" height="95" rx="6" fill="#1e1b4b" opacity="0.9" />
+  <!-- Window Stars & Moon -->
+  <path d="M140,80 A18,18 0 0,1 160,105 A18,18 0 1,0 140,80 Z" fill="#fef08a" />
+  <circle cx="230" cy="85" r="2.5" fill="#ffffff" />
+  <circle cx="250" cy="115" r="2" fill="#ffffff" />
+  <circle cx="220" cy="180" r="2" fill="#ffffff" />
+
+  <!-- Party Garland / Bunting Across Ceiling -->
+  <path d="M0,60 Q300,140 600,70 Q900,150 1200,60" fill="none" stroke="#e11d48" stroke-width="2.5" />
+  <polygon points="60,75 110,80 85,125" fill="#f43f5e" />
+  <polygon points="150,88 200,98 175,145" fill="#fbbf24" />
+  <polygon points="240,105 290,115 265,160" fill="#38bdf8" />
+  <polygon points="330,118 380,120 355,168" fill="#a855f7" />
+  <polygon points="420,118 470,112 445,160" fill="#ec4899" />
+  <polygon points="510,105 560,92 535,142" fill="#34d399" />
+  <polygon points="600,72 650,88 625,135" fill="#f59e0b" />
+  <polygon points="690,98 740,112 715,158" fill="#f43f5e" />
+  <polygon points="780,120 830,126 805,172" fill="#60a5fa" />
+  <polygon points="870,126 920,118 895,165" fill="#fbbf24" />
+  <polygon points="960,108 1010,95 985,148" fill="#c084fc" />
+  <polygon points="1050,85 1100,72 1075,125" fill="#f472b6" />
+
+  <!-- Warm Glowing Fairy Light Orbs -->
+  <circle cx="85" cy="78" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="175" cy="94" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="265" cy="110" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="355" cy="120" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="445" cy="115" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="535" cy="98" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="625" cy="80" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="715" cy="105" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="805" cy="123" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="895" cy="122" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="985" cy="102" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+  <circle cx="1075" cy="78" r="8" fill="#fde047" filter="url(#ghibliGlow)" />
+
+  <!-- Pastel Party Balloons (Right Wall) -->
+  <g transform="translate(1060, 220)" filter="url(#softShadow)">
+    <path d="M0,0 Q-32,-55 0,-95 Q32,-55 0,0 Z" fill="#fda4af" stroke="#f43f5e" stroke-width="2" />
+    <polygon points="-4,0 4,0 0,8" fill="#f43f5e" />
+    <path d="M0,8 Q-12,45 8,85" stroke="#cbd5e1" stroke-width="1.5" fill="none" />
+    <ellipse cx="-10" cy="-65" rx="5" ry="16" fill="#ffffff" opacity="0.65" transform="rotate(-20, -10, -65)" />
+
+    <g transform="translate(-65, -35)">
+      <path d="M0,0 Q-30,-50 0,-90 Q30,-50 0,0 Z" fill="#fde68a" stroke="#d97706" stroke-width="2" />
+      <polygon points="-4,0 4,0 0,8" fill="#d97706" />
+      <path d="M0,8 Q15,45 2,85" stroke="#cbd5e1" stroke-width="1.5" fill="none" />
+      <ellipse cx="-8" cy="-60" rx="4" ry="14" fill="#ffffff" opacity="0.65" transform="rotate(-20, -8, -60)" />
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. WOODEN CELEBRATION TABLE                -->
+  <!-- ========================================== -->
+  <polygon points="0,485 1200,485 1200,675 0,675" fill="url(#woodTableGrad)" stroke="#78350f" stroke-width="4" />
+  <!-- White Lace Tablecloth Runner -->
+  <polygon points="200,485 1000,485 960,565 240,565" fill="#ffffff" opacity="0.95" stroke="#cbd5e1" stroke-width="2" filter="url(#softShadow)" />
+  <line x1="200" y1="485" x2="1000" y2="485" stroke="#f43f5e" stroke-width="3.5" />
+  <!-- Cute scalloped lace edge -->
+  <path d="M240,565 Q260,580 280,565 Q300,580 320,565 Q340,580 360,565 Q380,580 400,565 Q420,580 440,565 Q460,580 480,565 Q500,580 520,565 Q540,580 560,565 Q580,580 600,565 Q620,580 640,565 Q660,580 680,565 Q700,580 720,565 Q740,580 760,565 Q780,580 800,565 Q820,580 840,565 Q860,580 880,565 Q900,580 920,565 Q940,580 960,565" fill="none" stroke="#f43f5e" stroke-width="2" />
+
+  <!-- Cute Gift Boxes on the Table -->
+  <!-- Gift Box 1 (Left) -->
+  <g transform="translate(180, 440)" filter="url(#softShadow)">
+    <rect x="0" y="20" width="70" height="60" rx="6" fill="#38bdf8" stroke="#0284c7" stroke-width="2" />
+    <rect x="-4" y="14" width="78" height="15" rx="4" fill="#0284c7" />
+    <rect x="30" y="14" width="10" height="66" fill="#fef08a" />
+    <!-- Ribbon Bow -->
+    <ellipse cx="28" cy="10" rx="8" ry="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1" />
+    <ellipse cx="42" cy="10" rx="8" ry="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1" />
+    <circle cx="35" cy="12" r="4" fill="#fbbf24" />
+  </g>
+
+  <!-- Gift Box 2 (Right) -->
+  <g transform="translate(950, 435)" filter="url(#softShadow)">
+    <rect x="0" y="25" width="80" height="65" rx="6" fill="#ec4899" stroke="#be123c" stroke-width="2" />
+    <rect x="-4" y="18" width="88" height="16" rx="4" fill="#be123c" />
+    <rect x="35" y="18" width="10" height="72" fill="#fff" />
+    <ellipse cx="33" cy="12" rx="9" ry="6" fill="#fff" stroke="#f43f5e" stroke-width="1" />
+    <ellipse cx="47" cy="12" rx="9" ry="6" fill="#fff" stroke="#f43f5e" stroke-width="1" />
+    <circle cx="40" cy="14" r="4" fill="#fda4af" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. BOY STANDING BESIDE HER CLAPPING 👏    -->
+  <!-- ========================================== -->
+  <g transform="translate(670, 130)" filter="url(#softShadow)">
+    
+    <!-- Speech Bubble from Boy: "Happy Birthday! 🎂✨" -->
+    <g transform="translate(-40, -40)" filter="url(#ghibliGlow)">
+      <path d="M0,0 L180,0 Q195,0 195,15 L195,45 Q195,60 180,60 L50,60 L25,75 L35,60 L0,60 Q-15,60 -15,45 L-15,15 Q-15,0 0,0 Z" fill="#ffffff" stroke="#f43f5e" stroke-width="2.5" />
+      <text x="90" y="28" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">
+        "Happy Birthday!" 🎂
+      </text>
+      <text x="90" y="48" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="600" fill="#9f1239" text-anchor="middle">
+        Make a special wish! ✨
+      </text>
+    </g>
+
+    <!-- Boy Body / Torso (Blue College Shirt with rolled sleeves) -->
+    <path d="M120,380 L145,190 Q195,160 255,170 L295,190 L325,380 Z" fill="url(#boyShirt)" stroke="#1e3a8a" stroke-width="3.5" />
+    <path d="M190,170 L220,255 L255,170" fill="#93c5fd" stroke="#1e3a8a" stroke-width="2.5" />
+
+    <!-- Boy Head & Neck -->
+    <polygon points="205,160 235,160 230,195 210,195" fill="#fed7aa" stroke="#ea580c" stroke-width="2" />
+    <ellipse cx="220" cy="115" rx="42" ry="48" fill="#fed7aa" stroke="#ea580c" stroke-width="3" />
+
+    <!-- Boy Anime Hair (Ghibli Boy Hairstyle) -->
+    <path d="M170,115 Q165,60 205,45 Q245,35 275,60 Q290,90 280,125 Q265,85 235,90 Q205,95 185,125 Z" fill="#1e293b" stroke="#0f172a" stroke-width="3" />
+
+    <!-- Boy Eyes (Singing & Clapping Happy Anime Eyes ^_^) -->
+    <path d="M195,115 Q208,104 220,115" fill="none" stroke="#1e293b" stroke-width="4" stroke-linecap="round" />
+    <path d="M235,115 Q248,104 260,115" fill="none" stroke="#1e293b" stroke-width="4" stroke-linecap="round" />
+    
+    <!-- Big Joyful Open Mouth Singing / Wishing -->
+    <path d="M212,132 Q228,155 244,132 Z" fill="#be123c" stroke="#881337" stroke-width="2.5" />
+    <!-- Tongue in Mouth -->
+    <path d="M218,142 Q228,136 238,142" fill="#fda4af" />
+    
+    <!-- Cheerful Pink Cheek Blush -->
+    <ellipse cx="195,128" rx="9" ry="5" fill="#fda4af" opacity="0.9" />
+    <ellipse cx="260,128" rx="9" ry="5" fill="#fda4af" opacity="0.9" />
+
+    <!-- Boy Arms & Clapping Hands (Animated 👏 Gesture) -->
+    <!-- Left Arm -->
+    <path d="M145,205 Q105,250 135,295 L165,275 Q140,245 160,210 Z" fill="#60a5fa" stroke="#1e3a8a" stroke-width="3.5" />
+    <!-- Right Arm -->
+    <path d="M295,205 Q255,255 195,285 L185,265 Q230,235 280,205 Z" fill="#60a5fa" stroke="#1e3a8a" stroke-width="3.5" />
+
+    <!-- Clapping Hands Meeting Together -->
+    <ellipse cx="155" cy="285" rx="15" ry="19" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" transform="rotate(-28, 155, 285)" />
+    <ellipse cx="175" cy="280" rx="15" ry="19" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" transform="rotate(28, 175, 280)" />
+
+    <!-- Clapping Sound Impact Burst 👏✨ -->
+    <path d="M165,258 L165,242" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M148,262 L134,250" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M182,262 L196,250" stroke="#f59e0b" stroke-width="3.5" stroke-linecap="round" />
+    <use href="#starGlow" x="165" y="255" transform="scale(1.1)" filter="url(#ghibliGlow)" />
+
+    <!-- Musical Notes floating above Boy (Singing Birthday Song 🎶) -->
+    <text x="280" y="40" font-family="'Segoe UI', sans-serif" font-size="24" fill="#e11d48" font-weight="bold" filter="url(#ghibliGlow)">
+      🎶
+    </text>
+    <text x="240" y="10" font-family="'Segoe UI', sans-serif" font-size="20" fill="#f59e0b" font-weight="bold">
+      🎵
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 4. BIRTHDAY GIRL (LEFT) CUTTING HER CAKE   -->
+  <!-- ========================================== -->
+  <g transform="translate(230, 115)" filter="url(#softShadow)">
+    
+    <!-- Girl Body & Cute Birthday Floral Dress -->
+    <path d="M110,395 L135,215 Q185,185 240,215 L270,395 Z" fill="url(#girlDress)" stroke="#881337" stroke-width="3.5" />
+    <!-- White Lace Collar & Golden Bow -->
+    <path d="M168,215 Q190,240 212,215" fill="#ffffff" stroke="#881337" stroke-width="2" />
+    <circle cx="190" cy="232" r="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+
+    <!-- Girl Head & Flowing Ghibli Hair -->
+    <!-- Back Long Hair -->
+    <path d="M125,130 Q100,220 115,330 Q190,350 255,330 Q270,220 250,130 Z" fill="#3b1d11" stroke="#1f0e08" stroke-width="3.5" />
+    
+    <!-- Neck & Face -->
+    <polygon points="175,175 205,175 200,210 180,210" fill="#fed7aa" stroke="#ea580c" stroke-width="2" />
+    <ellipse cx="190" cy="125" rx="40" ry="46" fill="#fed7aa" stroke="#ea580c" stroke-width="3" />
+    
+    <!-- Front Hair & Bangs -->
+    <path d="M148,125 Q145,70 190,60 Q235,70 232,125 Q215,92 190,98 Q165,92 148,125 Z" fill="#3b1d11" stroke="#1f0e08" stroke-width="3" />
+
+    <!-- Gold Birthday Queen Crown 👑 -->
+    <polygon points="165,60 176,32 190,48 204,32 215,60" fill="#f59e0b" stroke="#b45309" stroke-width="2.5" />
+    <circle cx="176" cy="32" r="3.5" fill="#e11d48" />
+    <circle cx="190" cy="48" r="3.5" fill="#3b82f6" />
+    <circle cx="204" cy="32" r="3.5" fill="#e11d48" />
+
+    <!-- Radiant Anime Smiling Eyes looking down lovingly at the cake -->
+    <ellipse cx="172" cy="122" rx="7.5" ry="11" fill="#1e293b" />
+    <circle cx="169" cy="118" r="3.5" fill="#ffffff" />
+    <ellipse cx="208" cy="122" rx="7.5" ry="11" fill="#1e293b" />
+    <circle cx="205" cy="118" r="3.5" fill="#ffffff" />
+
+    <!-- Beautiful Gentle Birthday Smile -->
+    <path d="M176,145 Q190,162 204,145" fill="#be123c" stroke="#881337" stroke-width="2.5" />
+    <!-- Rosy Cheek Blush -->
+    <ellipse cx="158" cy="138" rx="10" ry="6" fill="#fda4af" opacity="0.95" />
+    <ellipse cx="222" cy="138" rx="10" ry="6" fill="#fda4af" opacity="0.95" />
+
+    <!-- Girl Arms & Hands Holding Cake Knife (Slicing Action) -->
+    <!-- Left Arm -->
+    <path d="M135,225 Q165,280 220,310" fill="none" stroke="#f43f5e" stroke-width="24" stroke-linecap="round" />
+    <path d="M135,225 Q165,280 220,310" fill="none" stroke="#fed7aa" stroke-width="17" stroke-linecap="round" />
+    
+    <!-- Right Arm -->
+    <path d="M250,225 Q230,280 225,310" fill="none" stroke="#f43f5e" stroke-width="24" stroke-linecap="round" />
+    <path d="M250,225 Q230,280 225,310" fill="none" stroke="#fed7aa" stroke-width="17" stroke-linecap="round" />
+
+    <!-- Hands Holding Ribboned Knife Handle -->
+    <circle cx="225" cy="310" r="13" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" />
+    <circle cx="230" cy="318" r="11" fill="#fed7aa" stroke="#ea580c" stroke-width="2" />
+    <!-- Pink Ribbon on Knife -->
+    <ellipse cx="225" cy="302" rx="7" ry="4" fill="#fb7185" />
+
+    <!-- Shiny Cake Knife Blade Slicing Down into Cake -->
+    <polygon points="225,310 230,316 300,380 288,392 218,322" fill="#f8fafc" stroke="#94a3b8" stroke-width="2.5" />
+    <line x1="230" y1="318" x2="294" y2="384" stroke="#ffffff" stroke-width="2.5" />
+    <!-- Blade Shine Sparkle -->
+    <use href="#starGlow" x="290" y="380" transform="scale(0.8)" filter="url(#ghibliGlow)" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 5. GLOWING 2-TIER CAKE & CANDLELIGHT       -->
+  <!-- ========================================== -->
+  <g transform="translate(460, 330)" filter="url(#softShadow)">
+    
+    <!-- Candlelight Warm Glow Halo -->
+    <circle cx="140" cy="60" r="180" fill="url(#candleGlowRadial)" pointer-events="none" />
+
+    <!-- Cake Stand (Elegant White Porcelain) -->
+    <ellipse cx="140" cy="190" rx="155" ry="28" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3.5" />
+    <ellipse cx="140" cy="184" rx="140" ry="22" fill="#ffffff" stroke="#f43f5e" stroke-width="2" />
+
+    <!-- Cake Bottom Tier (Strawberry Pink & Vanilla Cream) -->
+    <path d="M25,120 Q140,150 255,120 L255,175 Q140,205 25,175 Z" fill="#fda4af" stroke="#be123c" stroke-width="3" />
+    <ellipse cx="140" cy="120" rx="115" ry="22" fill="url(#frostingCream)" stroke="#be123c" stroke-width="2.5" />
+    
+    <!-- Frosting Cream Drips -->
+    <path d="M25,120 Q42,142 58,126 Q74,148 90,126 Q106,152 122,128 Q140,154 158,128 Q174,152 190,128 Q206,148 222,126 Q238,142 255,120" fill="url(#frostingCream)" stroke="#fb7185" stroke-width="1.5" />
+
+    <!-- Cake Top Tier (Vanilla White with Strawberry Border) -->
+    <path d="M60,65 Q140,90 220,65 L220,112 Q140,135 60,112 Z" fill="#ffffff" stroke="#be123c" stroke-width="2.5" />
+    <ellipse cx="140" cy="65" rx="80" ry="18" fill="url(#frostingCream)" stroke="#be123c" stroke-width="2" />
+
+    <!-- Strawberries on Top of Cake -->
+    <circle cx="90" cy="60" r="10" fill="#e11d48" stroke="#881337" stroke-width="1.5" />
+    <circle cx="122" cy="68" r="10" fill="#e11d48" stroke="#881337" stroke-width="1.5" />
+    <circle cx="158" cy="68" r="10" fill="#e11d48" stroke="#881337" stroke-width="1.5" />
+    <circle cx="190" cy="60" r="10" fill="#e11d48" stroke="#881337" stroke-width="1.5" />
+
+    <!-- Cake Frosting Message -->
+    <text x="140" y="100" font-family="'Brush Script MT', 'Dancing Script', cursive, sans-serif" font-size="16" font-weight="bold" fill="#be123c" text-anchor="middle">
+      Happy Birthday! 🎂💖
+    </text>
+    <text x="140" y="160" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#be123c" text-anchor="middle" letter-spacing="1">
+      AUGUST 26, 2025
+    </text>
+
+    <!-- 3 Glowing Lit Candles -->
+    <!-- Candle 1 (Left) -->
+    <rect x="110" y="18" width="8" height="38" rx="2" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+    <line x1="114" y1="18" x2="114" y2="10" stroke="#78350f" stroke-width="2" />
+    <path d="M114,10 Q106,1 114,-8 Q122,1 114,10 Z" fill="#f59e0b" filter="url(#ghibliGlow)" />
+    <circle cx="114" cy="0" r="4" fill="#ffffff" />
+
+    <!-- Candle 2 (Center - Tall Main Flame) -->
+    <rect x="136" y="8" width="8" height="46" rx="2" fill="#f43f5e" stroke="#be123c" stroke-width="1" />
+    <line x1="140" y1="8" x2="140" y2="-1" stroke="#78350f" stroke-width="2" />
+    <path d="M140,-1 Q131,-12 140,-24 Q149,-12 140,-1 Z" fill="#fbbf24" filter="url(#ghibliGlow)" />
+    <circle cx="140" cy="-11" r="5" fill="#ffffff" />
+
+    <!-- Candle 3 (Right) -->
+    <rect x="162" y="18" width="8" height="38" rx="2" fill="#38bdf8" stroke="#0284c7" stroke-width="1" />
+    <line x1="166" y1="18" x2="166" y2="10" stroke="#78350f" stroke-width="2" />
+    <path d="M166,10 Q158,1 166,-8 Q174,1 166,10 Z" fill="#f59e0b" filter="url(#ghibliGlow)" />
+    <circle cx="166" cy="0" r="4" fill="#ffffff" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 6. FLOATING HEARTS, SPARKLES & CONFETTI    -->
+  <!-- ========================================== -->
+  <!-- Cute Floating Hearts (Already Falling in Love!) -->
+  <use href="#heartGlow" x="420" y="240" transform="scale(1.6)" filter="url(#ghibliGlow)" />
+  <use href="#heartGlow" x="630" y="210" transform="scale(1.8)" filter="url(#ghibliGlow)" />
+  <use href="#heartGlow" x="780" y="170" transform="scale(1.4)" filter="url(#ghibliGlow)" />
+  <use href="#heartGlow" x="330" y="200" transform="scale(1.3)" />
+
+  <use href="#starGlow" x="380" y="290" transform="scale(1.4)" filter="url(#ghibliGlow)" />
+  <use href="#starGlow" x="580" y="260" transform="scale(1.6)" filter="url(#ghibliGlow)" />
+  <use href="#starGlow" x="840" y="290" transform="scale(1.3)" filter="url(#ghibliGlow)" />
+  <use href="#starGlow" x="920" y="380" transform="scale(1.2)" />
+
+  <!-- Main Top Banner -->
+  <rect x="260" y="20" width="680" height="44" rx="14" fill="#ffffff" opacity="0.95" stroke="#f43f5e" stroke-width="2.5" filter="url(#softShadow)" />
+  <text x="600" y="48" font-family="'Georgia', 'Playfair Display', serif" font-size="15" font-weight="bold" fill="#be123c" text-anchor="middle" letter-spacing="1">
+    🎂 AUGUST 26, 2025 • CELEBRATING HER BIRTHDAY AS FRIENDS 🎈
+  </text>
+</svg>

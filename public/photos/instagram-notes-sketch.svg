@@ -1,0 +1,296 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Paper Texture & Sketch Background -->
+    <linearGradient id="sketchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbf0" />
+      <stop offset="30%" stop-color="#fff5f5" />
+      <stop offset="70%" stop-color="#ffe4e6" />
+      <stop offset="100%" stop-color="#fecdd3" />
+    </linearGradient>
+
+    <!-- Warm Lamp Light Beam -->
+    <linearGradient id="lampGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#fed7aa" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Pencil Ink Gradient -->
+    <linearGradient id="inkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Instagram Gradient for phone screen -->
+    <linearGradient id="igGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#833ab4" />
+      <stop offset="50%" stop-color="#fd1d1d" />
+      <stop offset="100%" stop-color="#fcb045" />
+    </linearGradient>
+
+    <!-- Soft Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="paperShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#881337" flood-opacity="0.15" />
+    </filter>
+
+    <!-- Sparkle Symbol -->
+    <g id="sparkleDoodle">
+      <path d="M0,-10 Q0,0 10,0 Q0,0 0,10 Q0,0 -10,0 Q0,0 0,-10 Z" fill="#e11d48" opacity="0.85" />
+      <circle cx="0" cy="0" r="2.5" fill="#fff" />
+    </g>
+
+    <g id="heartDoodle">
+      <path d="M0,4 A4,4 0 0,0 8,-1 A4,4 0 0,0 0,-7 A4,4 0 0,0 -8,-1 A4,4 0 0,0 0,4 Z" fill="#f43f5e" opacity="0.8" />
+    </g>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. SKETCH PAPER BACKGROUND                 -->
+  <!-- ========================================== -->
+  <rect width="1200" height="675" fill="url(#sketchBg)" />
+
+  <!-- Cozy Study Room Wall Lines (Hand-drawn Sketch Style) -->
+  <line x1="0" y1="480" x2="1200" y2="480" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="8 4" />
+  <line x1="720" y1="0" x2="720" y2="480" stroke="#e2e8f0" stroke-width="2" />
+
+  <!-- Window Frame in Background (Sketch) -->
+  <rect x="820" y="40" width="300" height="240" rx="12" fill="#ffffff" opacity="0.7" stroke="#94a3b8" stroke-width="3" />
+  <line x1="970" y1="40" x2="970" y2="280" stroke="#94a3b8" stroke-width="2" />
+  <line x1="820" y1="160" x2="1120" y2="160" stroke="#94a3b8" stroke-width="2" />
+  <!-- Crescent Moon & Stars in Window -->
+  <path d="M1030,80 A25,25 0 0,1 1060,115 A25,25 0 1,0 1030,80 Z" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
+  <use href="#sparkleDoodle" x="910" y="90" transform="scale(0.8)" />
+  <use href="#sparkleDoodle" x="940" y="210" transform="scale(0.7)" />
+  <use href="#sparkleDoodle" x="1070" y="200" transform="scale(0.9)" />
+
+  <!-- ========================================== -->
+  <!-- 2. DESK LAMP & WARM GLOW                   -->
+  <!-- ========================================== -->
+  <!-- Desk Lamp -->
+  <path d="M140,480 L180,480" stroke="#334155" stroke-width="5" stroke-linecap="round" />
+  <path d="M160,480 Q140,320 180,240 Q210,180 250,200" fill="none" stroke="#475569" stroke-width="6" stroke-linecap="round" />
+  <!-- Lamp Shade -->
+  <polygon points="230,190 280,220 235,245 200,205" fill="#e11d48" stroke="#9f1239" stroke-width="2.5" />
+  <!-- Lamp Light Cone Streaming onto Desk -->
+  <polygon points="250,230 60,675 780,675" fill="url(#lampGlow)" style="mix-blend-mode: screen;" />
+
+  <!-- ========================================== -->
+  <!-- 3. BOY SKETCH (LEFT - SMILING AT PHONE)   -->
+  <!-- ========================================== -->
+  <!-- Boy Sitting at Desk Sketch -->
+  <!-- Torso & College Hoodie -->
+  <path d="M260,675 L280,460 Q320,430 380,440 L430,460 L460,675 Z" fill="#3b82f6" opacity="0.85" stroke="#1d4ed8" stroke-width="3" />
+  
+  <!-- Hoodie details & folds (Anime Sketch lines) -->
+  <path d="M320,440 Q350,470 380,440" fill="none" stroke="#1e40af" stroke-width="2.5" />
+  <path d="M350,455 L350,540" stroke="#1e40af" stroke-width="2" stroke-dasharray="4 2" />
+  
+  <!-- Right Arm Resting on Desk -->
+  <path d="M410,470 Q460,490 490,560 L440,575 Q410,520 380,490 Z" fill="#60a5fa" stroke="#1d4ed8" stroke-width="2.5" />
+  <!-- Hand holding chin (classic thoughtful romantic pose) -->
+  <circle cx="490" cy="565" r="16" fill="#fed7aa" stroke="#ea580c" stroke-width="2" />
+
+  <!-- Boy's Head & Face Sketch -->
+  <ellipse cx="360" cy="360" rx="42" ry="48" fill="#fed7aa" stroke="#ea580c" stroke-width="2.5" />
+  <!-- Anime Hair (Messy College Hairstyle Sketch) -->
+  <path d="M315,360 Q310,310 345,295 Q380,285 405,310 Q420,335 410,370 Q395,330 370,335 Q340,340 325,370 Z" fill="#1e293b" stroke="#0f172a" stroke-width="2.5" />
+  
+  <!-- Smiling Eyes & Blush (Anime Drawing) -->
+  <!-- Left Eye Smiling Curve -->
+  <path d="M340,360 Q350,352 360,360" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+  <!-- Right Eye Smiling Curve -->
+  <path d="M375,360 Q385,352 395,360" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" />
+  <!-- Cute Nose & Sweet Smile -->
+  <path d="M368,368 L366,375" stroke="#ea580c" stroke-width="2" stroke-linecap="round" />
+  <path d="M355,385 Q368,396 382,385" fill="none" stroke="#be123c" stroke-width="3" stroke-linecap="round" />
+  <!-- Anime Soft Pink Cheek Blush -->
+  <ellipse cx="338" cy="372" rx="8" ry="4" fill="#fda4af" opacity="0.8" />
+  <ellipse cx="395" cy="372" rx="8" ry="4" fill="#fda4af" opacity="0.8" />
+
+  <!-- Heart floating above Boy's Head -->
+  <use href="#heartDoodle" x="420" y="300" transform="scale(1.5)" filter="url(#softGlow)" />
+
+  <!-- ========================================== -->
+  <!-- 4. OPEN COLLEGE NOTEBOOK & NOTES SPREAD     -->
+  <!-- ========================================== -->
+  <!-- Desk Surface -->
+  <polygon points="0,520 1200,520 1200,675 0,675" fill="#f8fafc" stroke="#cbd5e1" stroke-width="3" />
+
+  <!-- Giant Open College Spiral Notebook (Center Right) -->
+  <g transform="translate(540, 360) rotate(-4)" filter="url(#paperShadow)">
+    <!-- Left Page -->
+    <path d="M0,0 L200,10 L190,240 L-10,230 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Right Page -->
+    <path d="M200,10 L410,-2 L400,228 L190,240 Z" fill="#fffdfa" stroke="#cbd5e1" stroke-width="2" />
+    
+    <!-- Spiral Binding Rings -->
+    <path d="M195,15 Q205,15 200,25" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,45 Q205,45 200,55" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,75 Q205,75 200,85" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,105 Q205,105 200,115" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,135 Q205,135 200,145" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,165 Q205,165 200,175" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,195 Q205,195 200,205" stroke="#64748b" stroke-width="3" fill="none" />
+    <path d="M195,225 Q205,225 200,235" stroke="#64748b" stroke-width="3" fill="none" />
+
+    <!-- Left Page Content: Handwritten Notes & Formulas -->
+    <text x="15" y="30" font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#0284c7">
+      📚 COLLEGE LECTURE NOTES
+    </text>
+    <line x1="15" y1="45" x2="175" y2="45" stroke="#e2e8f0" stroke-width="1.5" />
+    <text x="15" y="60" font-family="'Segoe UI', cursive, sans-serif" font-size="9" fill="#475569">
+      • Seminar Hall 3 Recap
+    </text>
+    <line x1="15" y1="75" x2="175" y2="75" stroke="#e2e8f0" stroke-width="1.5" />
+    <text x="15" y="90" font-family="'Segoe UI', cursive, sans-serif" font-size="9" fill="#475569">
+      • Chapter 2: Destiny &amp; Coincidence
+    </text>
+    <line x1="15" y1="105" x2="175" y2="105" stroke="#e2e8f0" stroke-width="1.5" />
+    <text x="15" y="120" font-family="'Segoe UI', cursive, sans-serif" font-size="9" fill="#e11d48" font-weight="bold">
+      • "Me aeni pasethi notes mangela!"
+    </text>
+    <line x1="15" y1="135" x2="175" y2="135" stroke="#e2e8f0" stroke-width="1.5" />
+    <text x="15" y="150" font-family="'Segoe UI', cursive, sans-serif" font-size="9" fill="#475569">
+      • Result: Fell completely in love ❤️
+    </text>
+    <line x1="15" y1="165" x2="175" y2="165" stroke="#e2e8f0" stroke-width="1.5" />
+    <line x1="15" y1="195" x2="175" y2="195" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Cute Heart Doodles on Margin -->
+    <use href="#heartDoodle" x="150" y="180" transform="scale(0.8)" />
+    <use href="#heartDoodle" x="165" y="195" transform="scale(0.6)" />
+
+    <!-- Right Page Content: The Famous Instagram DM Quote -->
+    <rect x="220" y="25" width="165" height="40" rx="8" fill="#fdf2f8" stroke="#f43f5e" stroke-width="1" />
+    <text x="302" y="42" font-family="'Georgia', serif" font-size="10" font-weight="bold" fill="#be123c" text-anchor="middle">
+      INSTAGRAM DM MEMORY 📱
+    </text>
+    <text x="302" y="56" font-family="'Segoe UI', sans-serif" font-size="8" fill="#9f1239" text-anchor="middle">
+      August 2025 • The Sweetest Excuse
+    </text>
+
+    <!-- Sketch of Notes Pages Sent through Air -->
+    <path d="M225,90 Q300,105 375,90" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3 3" fill="none" />
+    <path d="M225,120 Q300,135 375,120" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3 3" fill="none" />
+    <path d="M225,150 Q300,165 375,150" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3 3" fill="none" />
+    
+    <!-- Romantic Note Stamp -->
+    <rect x="235" y="165" width="145" height="50" rx="6" fill="#fff1f2" stroke="#fda4af" stroke-width="1.5" stroke-dasharray="4 2" />
+    <text x="307" y="185" font-family="'Brush Script MT', 'Dancing Script', cursive" font-size="14" font-weight="bold" fill="#e11d48" text-anchor="middle">
+      "Asking for notes changed my life"
+    </text>
+    <text x="307" y="202" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold" fill="#db2777" text-anchor="middle">
+      From Notes to 1 Year of Soulmates 💖
+    </text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 5. SMARTPHONE SHOWING THE INSTAGRAM DM CHAT -->
+  <!-- ========================================== -->
+  <!-- Smartphone in Front of Open Book -->
+  <g transform="translate(740, 150) rotate(5)" filter="url(#paperShadow)">
+    <!-- Phone Outer Case -->
+    <rect x="0" y="0" width="220" height="360" rx="30" fill="#0f172a" stroke="#334155" stroke-width="5" />
+    <!-- Phone Screen -->
+    <rect x="8" y="12" width="204" height="336" rx="22" fill="#ffffff" />
+    
+    <!-- Instagram Direct Header -->
+    <rect x="8" y="12" width="204" height="50" rx="22" fill="url(#igGrad)" />
+    <text x="110" y="42" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Instagram Direct 💌
+    </text>
+
+    <!-- Chat Bubbles -->
+    <!-- Bubble 1 (Boy asks for notes) -->
+    <rect x="45" y="80" width="155" height="50" rx="14" fill="#e11d48" />
+    <text x="55" y="98" font-family="'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ffffff">
+      "Hey! Do you have today's
+    </text>
+    <text x="55" y="114" font-family="'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#ffffff">
+      college lecture notes? 📚"
+    </text>
+    <text x="185" y="124" font-family="'Segoe UI', sans-serif" font-size="7" fill="#fecdd3">
+      10:24 PM ✓✓
+    </text>
+
+    <!-- Bubble 2 (Girl replies & sends notes) -->
+    <rect x="18" y="145" width="155" height="55" rx="14" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1" />
+    <text x="28" y="165" font-family="'Segoe UI', sans-serif" font-size="9.5" font-weight="600" fill="#1e293b">
+      "Yes! Here are the notes 📄✨"
+    </text>
+    <text x="28" y="180" font-family="'Segoe UI', sans-serif" font-size="8.5" fill="#e11d48" font-weight="bold">
+      [Notes_Seminar_Hall_3.pdf]
+    </text>
+    <text x="150" y="193" font-family="'Segoe UI', sans-serif" font-size="7" fill="#94a3b8">
+      10:26 PM
+    </text>
+
+    <!-- Bubble 3 (Boy's true inner thought) -->
+    <rect x="45" y="215" width="155" height="60" rx="14" fill="#db2777" />
+    <text x="55" y="234" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#ffffff">
+      "Thank you so much!! 😊"
+    </text>
+    <text x="55" y="249" font-family="'Segoe UI', sans-serif" font-size="8" italic="true" fill="#fdf2f8">
+      (Notes were just an excuse,
+    </text>
+    <text x="55" y="262" font-family="'Segoe UI', sans-serif" font-size="8" font-weight="bold" fill="#fef08a">
+      I just wanted to talk to you! ❤️)
+    </text>
+
+    <!-- Glowing Heart Reaction on DM -->
+    <circle cx="185" cy="275" r="14" fill="#fff" stroke="#f43f5e" stroke-width="2" filter="url(#softGlow)" />
+    <use href="#heartDoodle" x="185" y="278" transform="scale(1.2)" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 6. SKETCH PENCILS, PAPER AIRPLANES & HEARTS -->
+  <!-- ========================================== -->
+  <!-- Yellow Pencil on Desk -->
+  <g transform="translate(460, 580) rotate(-35)">
+    <polygon points="0,0 120,0 120,12 0,12" fill="#fbbf24" stroke="#d97706" stroke-width="1.5" />
+    <polygon points="120,0 145,6 120,12" fill="#fed7aa" stroke="#d97706" stroke-width="1" />
+    <polygon points="138,4 145,6 138,8" fill="#1e293b" />
+    <rect x="-15" y="0" width="15" height="12" fill="#fda4af" stroke="#e11d48" stroke-width="1" />
+  </g>
+
+  <!-- Flying Paper Airplane (Sending notes via air) -->
+  <g transform="translate(680, 110) rotate(15)" filter="url(#softGlow)">
+    <polygon points="0,0 60,25 0,50 20,25" fill="#ffffff" stroke="#f43f5e" stroke-width="2" />
+    <line x1="20" y1="25" x2="60" y2="25" stroke="#f43f5e" stroke-width="1.5" />
+    <!-- Dotted Flight Trail -->
+    <path d="M-60,50 Q-20,10 0,0" stroke="#f43f5e" stroke-width="2" stroke-dasharray="4 4" fill="none" />
+  </g>
+
+  <!-- Coffee Mug Sketch -->
+  <ellipse cx="1060" cy="540" rx="22" ry="12" fill="#ffffff" stroke="#94a3b8" stroke-width="2" />
+  <rect x="1038" y="540" width="44" height="40" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="2" />
+  <path d="M1082,548 Q1098,560 1082,572" stroke="#94a3b8" stroke-width="3" fill="none" stroke-linecap="round" />
+  <text x="1060" y="565" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#e11d48" text-anchor="middle">
+    ☕ ❤️
+  </text>
+  <!-- Coffee Steam lines -->
+  <path d="M1050,530 Q1055,510 1048,495" stroke="#cbd5e1" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M1065,530 Q1072,510 1066,495" stroke="#cbd5e1" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- Floating Glowing Sparkles & Hearts Across the Sketch -->
+  <use href="#sparkleDoodle" x="520" y="240" transform="scale(1.4)" filter="url(#softGlow)" />
+  <use href="#sparkleDoodle" x="720" y="80" transform="scale(1.2)" />
+  <use href="#sparkleDoodle" x="1000" y="440" transform="scale(1.5)" filter="url(#softGlow)" />
+  <use href="#sparkleDoodle" x="480" y="490" transform="scale(1.1)" />
+
+  <use href="#heartDoodle" x="650" y="220" transform="scale(1.4)" filter="url(#softGlow)" />
+  <use href="#heartDoodle" x="710" y="290" transform="scale(1.6)" filter="url(#softGlow)" />
+  <use href="#heartDoodle" x="980" y="320" transform="scale(1.2)" />
+  <use href="#heartDoodle" x="560" y="160" transform="scale(1.3)" filter="url(#softGlow)" />
+
+  <!-- Header Banner Title on Top -->
+  <rect x="360" y="25" width="480" height="38" rx="10" fill="#ffffff" opacity="0.9" stroke="#f43f5e" stroke-width="2" />
+  <text x="600" y="49" font-family="'Georgia', serif" font-size="14" font-weight="bold" fill="#be123c" text-anchor="middle" letter-spacing="1">
+    📱 THE INSTAGRAM DM • "CAN YOU SEND NOTES?" • AUGUST 2025
+  </text>
+</svg>
