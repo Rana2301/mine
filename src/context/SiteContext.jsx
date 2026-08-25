@@ -6,8 +6,8 @@ const SiteContext = createContext();
 
 const STORAGE_KEYS = {
   SETTINGS: 'bday_site_settings_v3',
-  MILESTONES: 'bday_site_milestones_v10',
-  PHOTOS: 'bday_site_photos_v4',
+  MILESTONES: 'bday_site_milestones_v11',
+  PHOTOS: 'bday_site_photos_v5',
   QUOTES: 'bday_site_quotes_v3',
   LETTERS: 'bday_site_letters_v3',
 };

@@ -1,5 +1,14 @@
 import { DEFAULT_QUOTES } from './defaultQuotes';
 
+const BASE = import.meta.env.BASE_URL || '/';
+export const resolveAsset = (path) => {
+  if (!path || path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+    return path;
+  }
+  const clean = path.startsWith('/') ? path.slice(1) : path;
+  return `${BASE}${clean}`;
+};
+
 export const INITIAL_SETTINGS = {
   partnerName: "My Dearest Love",
   senderName: "Your Forever Love",
@@ -26,7 +35,7 @@ export const INITIAL_MILESTONES = [
     iconName: "Sparkles",
     story: "On July 30, 2025, amidst the crowded seminar hall, my eyes found yours. Out of everyone in college, you were the only one that completely captured my heart. That was day one of the best love story of my life.",
     highlightQuote: "July 30, 2025: The moment destiny brought my soulmate into my life.",
-    image: "/photos/seminar-hall-3.svg"
+    image: resolveAsset('photos/seminar-hall-3.svg')
   },
   {
     id: "m-2",
@@ -38,7 +47,7 @@ export const INITIAL_MILESTONES = [
     iconName: "MessageSquareHeart",
     story: "I had to find any reason to talk to you! So I opened Instagram and asked: 'Hey, do you have today's college notes?' (Me aeni pasethi notes mangela!). I didn't care about notes at all—I just wanted an excuse to talk to you. And that single conversation sparked the bond we share today!",
     highlightQuote: "Asking for college notes was the smartest decision I ever made.",
-    image: "/photos/instagram-notes-sketch.svg"
+    image: resolveAsset('photos/instagram-notes-sketch.svg')
   },
   {
     id: "m-3",
@@ -50,7 +59,7 @@ export const INITIAL_MILESTONES = [
     iconName: "HeartHandshake",
     story: "On August 26, 2025, I celebrated your birthday for the very first time as a friend. Seeing your pure happiness and radiant smile that day made me realize how special you were, and I silently wished you would one day be mine.",
     highlightQuote: "August 26, 2025: Celebrating you as a friend, already falling deeply in love.",
-    image: "/photos/ghibli-birthday-celebration.svg"
+    image: resolveAsset('photos/ghibli-birthday-celebration.svg')
   },
   {
     id: "m-4",
@@ -62,7 +71,7 @@ export const INITIAL_MILESTONES = [
     iconName: "Sparkles",
     story: "From playing Garba at your place during Navratri to holding hands before our college viva exams, every ordinary day turned into an extraordinary celebration with you by my side.",
     highlightQuote: "Dressed in festive colors and facing college exams together—with you, every moment became unforgettable.",
-    image: "/photos/ghibli-viva-navratri.svg"
+    image: resolveAsset('photos/ghibli-viva-navratri.svg')
   },
   {
     id: "m-5",
@@ -74,7 +83,7 @@ export const INITIAL_MILESTONES = [
     iconName: "Crown",
     story: "Today marks OUR VERY FIRST BIRTHDAY TOGETHER AS A COUPLE! Exactly 1 year since celebrating as friends, and over 1 year since meeting on July 30, 2025. Today, holding your hand as your boyfriend is the highest blessing in my life.",
     highlightQuote: "From friends celebrating on Aug 26, 2025 to celebrating our 1st birthday together in love today. Happy Birthday, my whole world!",
-    image: "/photos/first-birthday-together-lovers.svg"
+    image: resolveAsset('photos/first-birthday-together-lovers.svg')
   }
 ];
 
@@ -86,7 +95,7 @@ export const INITIAL_PHOTOS = [
     tag: "1st Photo Ever",
     caption: "The very first picture of you saved in my phone gallery. I had no idea back then that this girl would become my entire universe and soulmate.",
     quote: "That day, my phone gallery saved a photo; my heart saved an eternity of birthdays with you.",
-    imageUrl: "/photos/in-my-phone-1st-pic.jpeg",
+    imageUrl: resolveAsset('photos/in-my-phone-1st-pic.jpeg'),
     likes: 480
   },
   {
@@ -96,7 +105,7 @@ export const INITIAL_PHOTOS = [
     tag: "Friends 1st Garba",
     caption: "Garba celebration together for the first time before we officially started dating. Two friends dancing under the stars, already destined for love.",
     quote: "We were just friends celebrating Garba, but our hearts were already writing the first chapter of our forever.",
-    imageUrl: "/photos/friend-1st-pic.jpg",
+    imageUrl: resolveAsset('photos/friend-1st-pic.jpg'),
     likes: 470
   },
   {
@@ -106,7 +115,7 @@ export const INITIAL_PHOTOS = [
     tag: "1st Cute Face",
     caption: "The first time you showed me that irresistible cute face and I captured it instantly in my gallery forever.",
     quote: "One look at your cutest expression and my whole world paused. Happy 1st Birthday Together, my sweet jaan!",
-    imageUrl: "/photos/1st-cute-face.jpg",
+    imageUrl: resolveAsset('photos/1st-cute-face.jpg'),
     likes: 510
   },
   {
@@ -116,7 +125,7 @@ export const INITIAL_PHOTOS = [
     tag: "1st Navratri",
     caption: "Playing Garba and celebrating Navratri at your place for the first time. The warmth of your smile was brighter than all the festive lights.",
     quote: "Dressed in festival colors with the rhythm of dhol, but the most sacred blessing I received was you.",
-    imageUrl: "/photos/1st-navratri.jpg",
+    imageUrl: resolveAsset('photos/1st-navratri.jpg'),
     likes: 430
   },
   {
@@ -126,7 +135,7 @@ export const INITIAL_PHOTOS = [
     tag: "1st Viva Together",
     caption: "Our very first college viva exam after officially coming into a relationship. Nervous about the syllabus, but fearless because we held hands.",
     quote: "No matter how tough college viva was, one reassuring smile from you made every exam feel easy.",
-    imageUrl: "/photos/viva-day.jpeg",
+    imageUrl: resolveAsset('photos/viva-day.jpeg'),
     likes: 395
   },
   {
@@ -136,7 +145,7 @@ export const INITIAL_PHOTOS = [
     tag: "Cutest Smile",
     caption: "The cute, candid picture that never fails to melt my heart whenever I look at it during a busy day.",
     quote: "Your cuteness is my daily therapy, my comfort place, and the sweetest reason I smile every morning.",
-    imageUrl: "/photos/cute.jpeg",
+    imageUrl: resolveAsset('photos/cute.jpeg'),
     likes: 465
   },
   {
@@ -146,7 +155,7 @@ export const INITIAL_PHOTOS = [
     tag: "Her Favorite",
     caption: "The photo you love the most, looking like pure royalty. Radiant, graceful, and stunningly beautiful in every single pixel.",
     quote: "You love this picture, but what I love is the angelic soul smiling right back at me. Happy 1st Birthday Together, my queen!",
-    imageUrl: "/photos/your-fav-one.jpeg",
+    imageUrl: resolveAsset('photos/your-fav-one.jpeg'),
     likes: 540
   },
   {
@@ -156,7 +165,7 @@ export const INITIAL_PHOTOS = [
     tag: "My Favorite",
     caption: "If I had to choose one picture to keep in my wallet for the rest of my life, this is the one. Pure magic and endless love.",
     quote: "Out of billions of faces in the world, this single frame holds my entire heart, peace, and forever.",
-    imageUrl: "/photos/my-fav-one.jpeg",
+    imageUrl: resolveAsset('photos/my-fav-one.jpeg'),
     likes: 620
   },
   {
@@ -166,7 +175,7 @@ export const INITIAL_PHOTOS = [
     tag: "Together Each Other",
     caption: "Looking at this photo, anyone can see we are truly made for each other. 365+ days completed and an eternity of birthdays still to come.",
     quote: "Looking at us, I don't just see a picture; I see proof that destiny made us soulmates. Happy 1st Birthday Together, my whole world! 💖",
-    imageUrl: "/photos/together-each-other.jpg",
+    imageUrl: resolveAsset('photos/together-each-other.jpg'),
     likes: 680
   }
 ];
